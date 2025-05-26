@@ -21,7 +21,22 @@ export SOCIALDATA_API_KEY=your_actual_api_key_here
 npm test
 ```
 
-## 3. Configure Claude Desktop (2 minutes)
+## 3. Configure with Claude Code (30 seconds)
+
+For Claude Code (CLI):
+
+1. Create a `.env` file in the project folder with your API key:
+   ```
+   SOCIALDATA_API_KEY=your_actual_api_key_here
+   ```
+2. Navigate to the project folder: `cd socialdata-mcp-server`
+3. Run Claude Code from this directory: `claude`
+4. Give Claude this URL: https://docs.anthropic.com/en/docs/claude-code/tutorials#set-up-model-context-protocol-mcp
+5. Ask: "can you read this and add this mcp server to claude code?"
+6. Claude will automatically configure the MCP server
+7. Restart your Claude Code session to activate the tools
+
+**For Claude Desktop:**
 
 ```bash
 # Run the configuration helper
